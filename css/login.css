@@ -1,0 +1,76 @@
+.form
+{
+margin:20px;
+padding:20px;
+	
+
+}
+
+.jumbotron
+{
+
+text-align: center;
+color:#ffffff;
+background-color: #A901DB;
+padding: 60px 25px;
+}
+.navbar
+{
+background-color:#A901DB;
+background: #A901DB;
+border-color: transparent;
+min-height: 50px !important;
+padding: 10px;
+font-style: bold;
+font-size: 16px;
+
+
+}
+
+
+.nav.navbar-nav.navbar-right li a
+{
+	color:#FFFFFF;
+}
+.navbar-header .navbar-brand > a
+{
+	color:#FFFFFF  !important;
+}
+
+.icon-color
+{
+
+	color:white;
+	font-size:  30px;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #A901DB !important;
+    background-color: #fff !important;
+}
+
+.abc
+{
+
+
+	padding :50px;
+	max-width: 600px;
+	border-style: solid;
+	border-width: 1px;
+    max-height: 1000px;
+
+
+}
+
+.row{
+
+
+
+	padding-top: 80px;
+}
+
+.footer
+{
+
+	background-color: red;
+}
