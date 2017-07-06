@@ -1,21 +1,28 @@
+
+@import url("link href="https://fonts.googleapis.com/css?family=Bellefair|Droid+Sans+Mono|Oxygen|Armata" rel="stylesheet"");
 .jumbotron
 {
 
 text-align: center;
 color:#ffffff;
-background-color: #A901DB;
+background-color:#FA0E60  ;
 padding: 80px 25px;
+font-family: 'Bellefair',serif;
+width:100%;
+
 }
+
 
 .navbar
 {
-background-color:#A901DB;
-background: #A901DB;
+background-color:#FA0E60;
+background: #FA0E60;
 border-color: transparent;
 min-height: 50px !important;
 padding: 10px;
 font-style: bold;
 font-size: 16px;
+font-family: 'Droid Sans Mono', monospace;
 
 }
 
@@ -37,7 +44,7 @@ font-size: 16px;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #A901DB !important;
+    color: #FA0E60!important;
     background-color: #fff !important;
 }
 .input-group-button .btn .btn-danger
@@ -56,31 +63,35 @@ padding: 5px;
 .carousel
 {
 
-	width:500px;
-	height:400px;
-	margin: 50px;
+	width:450px;
+	height:410px;
+	margin: 60px;
 	
 }
 
 .carousel-caption
 {
 	position: relative;
-	margin-top: 25px;
+	margin-top: 10px;
+	margin-bottom: 5px;
 	color: black;
 	font-style: bold;
-	left:21px;
+	left:15px;
 }
 #AboutUs
 {
 
 margin-left: 37px;
-
 padding-top: 70px;
+margin-right: 37px;
+padding-bottom: 10px;
 }
 #Explore
 {
 margin-left: 37px;
 padding-top: 70px;
+margin-right: 37px;
+
 
 
 }
@@ -88,22 +99,27 @@ padding-top: 70px;
 {
 margin-left:37px;
 padding-top: 70px;
+margin-right: 37px;
 
 
 }
+#AddHere
+{
+ padding:10px;
+
+}
+
+
+
 #ContactUs
 {
 margin-left:37px;
 padding-top: 83px;
 padding-bottom: 30px;
+margin-right: 37px;
 
 
 }
-
-}
-
-
-#
 #internal
 {
 margin:95px;
@@ -130,14 +146,49 @@ font-style: bold;
   
 
 }
-.foot
+footer
 {
-    padding-top:20px;
-	max-height: 30px;
+    padding-top:5px;
+	background-color:#FA0E60  ;
+	color: white;
 }
 .mapatr
 {
 
 
 	padding:40px;
+}
+
+h2
+{
+	
+	font-size: 40px;
+	font-family: 'Droid Sans Mono', monospace;
+	
+}
+
+p{
+
+font-family: 'Oxygen', sans-serif;
+font-size: 22px;
+
+
+}
+h3
+{
+
+font-family: 'Droid Sans Mono', monospace;
+font-size: 25px;
+
+}
+
+body
+{
+background-color:#F3F3F3  ;
+
+}
+hr
+{
+	 border: 1px solid rgba(0,0,0,0.3);
+	
 }

@@ -1,12 +1,17 @@
+
+@import url("link href="https://fonts.googleapis.com/css?family=Bellefair|Droid+Sans+Mono|Oxygen|Armata" rel="stylesheet"");
+
 .navbar
 {
-background-color:#A901DB;
-background: #A901DB;
+background-color:#009688;
+background: #009688;
 border-color: transparent;
 min-height: 50px !important;
 padding: 10px;
 font-style: bold;
 font-size: 16px;
+font-family: 'Droid Sans Mono', monospace;
+
 
 
 }
@@ -15,8 +20,9 @@ font-size: 16px;
 
 text-align: center;
 color:#ffffff;
-background-color: #A901DB;
+background-color: #009688;
 padding: 80px 25px;
+font-family: 'Bellefair',serif;
 }
 
 
@@ -38,7 +44,7 @@ padding: 80px 25px;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #A901DB !important;
+    color: #009688 !important;
     background-color: #fff !important;
 }
 
@@ -78,4 +84,44 @@ padding-bottom: 50px;
 padding-top: 85px;
 padding-bottom: 50px;
 
+}
+h2
+{
+	
+	font-size: 40px;
+	font-family: 'Droid Sans Mono', monospace;
+	
+}
+
+p{
+
+font-family: 'Oxygen', sans-serif;
+font-size: 22px;
+
+
+}
+h3
+{
+
+font-family: 'Droid Sans Mono', monospace;
+font-size: 25px;
+
+}
+
+body
+{
+background-color:#F3F3F3  ;
+
+}
+hr
+{
+	 border: 1px solid rgba(0,0,0,0.3);
+	
+}
+
+footer
+{
+    padding-top:5px;
+	background-color:#009688 ;
+	color: white;
 }

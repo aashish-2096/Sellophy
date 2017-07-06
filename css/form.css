@@ -4,6 +4,7 @@
 	max-width: 600px;
 	max-height:1000px ;
 	padding :50px;
+    background-color: #D5F5E3;
 
 }
 
@@ -12,24 +13,29 @@
 
 text-align: center;
 color:#ffffff;
-background-color: #A901DB;
+background-color:#2ECC71;
 padding: 60px 25px;
+font-family: 'Bellefair',serif;
+
 }
 .form
 {
 	margin:30px;
+	padding-bottom: 50px;
 }
 
 
 .navbar
 {
-background-color:#A901DB;
-background: #A901DB;
+background-color:#2ECC71;
+background: #2ECC71;
 border-color: transparent;
 min-height: 50px !important;
 padding: 10px;
 font-style: bold;
 font-size: 16px;
+font-family: 'Droid Sans Mono', monospace;
+
 
 
 }
@@ -52,6 +58,53 @@ font-size: 16px;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #A901DB !important;
+    color: #2ECC71!important;
     background-color: #fff !important;
+}
+body
+{
+
+	background-color:#F3F3F3 
+}
+
+footer
+{
+
+	background-color:#2ECC71 ;
+	color: white;
+	padding-bottom: 0px !important;
+	margin-top: 80px;
+	margin-bottom: 0px;
+
+}
+
+
+h2
+{
+	
+	font-size: 40px;
+	font-family: 'Droid Sans Mono', monospace;
+	
+}
+
+p{
+
+font-family: 'Oxygen', sans-serif;
+font-size: 22px;
+
+
+}
+h3
+{
+
+font-family: 'Droid Sans Mono', monospace;
+font-size: 25px;
+
+
+}
+
+hr
+{
+	 border: 1px solid rgba(0,0,0,0.3);
+	
 }
