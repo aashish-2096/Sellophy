@@ -4,7 +4,7 @@
     <title>Sellophy</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="stylesheet" href="/home/aashish/Proj/style.css" text="text/css">
+    <link rel="stylesheet" href="css/style.css" text="text/css">
 </head>
 
 <body id= "top" data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -26,7 +26,15 @@
                        <li><a href="#Explore">Explore </a></li>
                        <li><a href="#Add">Add</a></li>
                        <li><a href="#ContactUs">Contact Us</a></li>
-                       <li><a href="/home/aashish/sell/Login.html">Login/Register</a></li>
+					   <%String b=request.getParameter("username");
+					   if(b==null)
+					   {%>
+                       <li><a href="Login.jsp">Login/Register</a></li>
+					   <%}
+					   else
+					   {%>
+					   <li><a href="logout.jsp">Logout</a></li>
+					   <%}%>
                 </ul>
           </div>
        </div>
@@ -66,9 +74,7 @@ Founded in 1996, the company’s mission is ‘to make doing business easy’. K
 
 
       </div>
-
-
-      <div class="h-divider">
+<div class="h-divider">
 </div>
     </div>
 </div>
@@ -107,20 +113,20 @@ Founded in 1996, the company’s mission is ‘to make doing business easy’. K
 
        <div class="carousel-inner" >
            <div class ="item active">
-               <img  src="/home/aashish/sell/1.jpg" alt="Books" >
+               <center><img  src="img/DS.jpg" height="400" width="350" alt="Books" ></center>
 
             </div>
 
              <div class ="item">
-               <img  src="/home/aashish/sell/2.jpg" alt="Stationaries" >
+               <center><img  src="img/comp1.jpg" alt="Stationaries" height="400" width="350"></center>
 
             </div>
              <div class ="item">
-               <img src="/home/aashish/sell/3.jpg" alt="Accessories" >
-               <div class="carousel-caption">
+               <center><img src="img/novel1.jpg" alt="Accessories" height="400" width="350"></center>
+               <!--<div class="carousel-caption">
                       <h3>Accessories</h3>
                       <p>Techie stuff!</p>
-                </div>
+                </div>-->
 
             </div>
 
@@ -157,12 +163,12 @@ Founded in 1996, the company’s mission is ‘to make doing business easy’. K
 
        <div class="carousel-inner" >
            <div class ="item active">
-               <img  src="/home/aashish/sell/1.jpg" alt="Books" >
+               <img  src="img/1.jpg" alt="Books" >
 
             </div>
 
              <div class ="item">
-               <img  src="/home/aashish/sell/2.jpg" alt="Stationaries" >
+               <img  src="img/2.jpg" alt="Stationaries" >
                <div class="carousel-caption">
                       <h3>Books</h3>
                       <p>Drafters and all</p>
@@ -170,7 +176,7 @@ Founded in 1996, the company’s mission is ‘to make doing business easy’. K
 
             </div>
              <div class ="item">
-               <img src="/home/aashish/sell/3.jpg" alt="Accessories" >
+               <img src="img/3.jpg" alt="Accessories" >
 
             </div>
 
@@ -210,7 +216,7 @@ Founded in 1996, the company’s mission is ‘to make doing business easy’. K
 
        <div class="carousel-inner" >
            <div class ="item active">
-               <img  src="/home/aashish/sell/1.jpg" alt="Books" >
+               <img  src="img/1.jpg" alt="Books" >
                <div class="carousel-caption">
                       <h3>Books</h3>
                       <p>We love reading!</p>
@@ -219,13 +225,13 @@ Founded in 1996, the company’s mission is ‘to make doing business easy’. K
             </div>
 
              <div class ="item">
-               <img  src="/home/aashish/sell/2.jpg" alt="Stationaries" >
+               <img  src="img/2.jpg" alt="Stationaries" >
 
 
 
             </div>
              <div class ="item">
-               <img src="/home/aashish/sell/3.jpg" alt="Accessories" >
+               <img src="img/3.jpg" alt="Accessories" >
 
             </div>
 
@@ -248,25 +254,28 @@ Founded in 1996, the company’s mission is ‘to make doing business easy’. K
 </div>
 </div>
 </div>
-
+<% String p=request.getParameter("username");
+if(p==null)
+{%>
 <div  class="container-fluid">
    <div class="row">
    <div class="col-md-1">
           </div> 
       <div class="col-md-2"  id ="buttonstoggle ">
-          <a href="/home/aashish/sell/book.html" class="btn btn-info btn-lg center-block " role="button">Find</a>
+		
+          <a href="book.jsp" class="btn btn-info btn-lg center-block " role="button">Books</a>
       </div>
       <div class="col-md-2">
           
       </div>  
        <div class="col-md-2">
-          <a href="/home/aashish/sell/accessories.html" class="btn btn-info btn-lg center-block" role="button">Find</a>
+          <a href="accessories.jsp" class="btn btn-info btn-lg center-block" role="button">Accessories</a>
       </div>   
       <div class="col-md-2">
          
       </div> 
        <div class="col-md-2">
-          <a href="/home/aashish/sell/Stationary.html" class="btn btn-info btn-lg center-block " role="button">Find</a>
+          <a href="Stationary.jsp" class="btn btn-info btn-lg center-block " role="button">Stationaries</a>
 
       </div>   
       <div class="col-md-1">
@@ -276,7 +285,38 @@ Founded in 1996, the company’s mission is ‘to make doing business easy’. K
     <br>
     <br>
     </div>
+<%}
+else
+{%>
+<div  class="container-fluid">
+   <div class="row">
+   <div class="col-md-1">
+          </div> 
+      <div class="col-md-2"  id ="buttonstoggle ">
+		
+          <a href="book.jsp?username=<%=request.getParameter("username")%>" class="btn btn-info btn-lg center-block " role="button">Find</a>
+      </div>
+      <div class="col-md-2">
+          
+      </div>  
+       <div class="col-md-2">
+          <a href="accessories.jsp?username=<%=request.getParameter("username")%>" class="btn btn-info btn-lg center-block" role="button">Find</a>
+      </div>   
+      <div class="col-md-2">
+         
+      </div> 
+       <div class="col-md-2">
+          <a href="Stationary.jsp?username=<%=request.getParameter("username")%>" class="btn btn-info btn-lg center-block " role="button">Find</a>
 
+      </div>   
+      <div class="col-md-1">
+         
+      </div>   
+    </div>
+    <br>
+    <br>
+    </div>
+<%}%>
 </div>    
 
 <div id ="Add" class="container-fluid text-center">
@@ -295,7 +335,16 @@ Founded in 1996, the company’s mission is ‘to make doing business easy’. K
    </div>
 
    <div  id="AddHere" class="col-sm-12 text-center">
-      <a href="/home/aashish/sell/add.html" class="btn btn-info btn-lg " role="button">Add Here</a>
+   <%String a=request.getParameter("username");
+   if(a==null)
+   {
+   %>
+      <a href="add.jsp" class="btn btn-info btn-lg " role="button">Add Here</a>
+	<%}
+	else
+	{%>
+	<a href="add.jsp?username=<%=request.getParameter("username")%>" class="btn btn-info btn-lg " role="button">Add Here</a>
+	<%}%>
 
    </div>
 
@@ -318,7 +367,7 @@ Founded in 1996, the company’s mission is ‘to make doing business easy’. K
  <div class="container " id="architects" >
    <div class="row" id="internal">
        <div class="col-sm-3  col-md-3 ">
-          <img src="/home/aashish/sell/aashish.jpg" class= "img-default img-responsive" alt="Aashish"  width="300" height="300">
+          <img src="img/aashish.jpg" class= "img-default img-responsive" alt="Aashish"  width="300" height="300">
          
          <div>
           <h3><strong>AASHISH KUMAR</strong></h3>
@@ -331,7 +380,7 @@ Founded in 1996, the company’s mission is ‘to make doing business easy’. K
        </div>
        
        <div class="col-sm-3 col-md-3 " >
-          <img src="/home/aashish/sell/arvind.jpg" class= "img-default img-responsive" alt="Arvind" width="300" height="300"> 
+          <img src="img/arv.jpg" class= "img-default img-responsive" alt="Arvind" width="300" height="300"> 
          <div >
           <h3><strong>ARVIND BHAGAT</strong></h3>
           <h4>Backend  Development</h4>

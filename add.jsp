@@ -1,3 +1,12 @@
+<%
+String str=request.getParameter("username");
+if(str==null)
+{
+	response.sendRedirect("Login.jsp");
+}
+else
+{
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +15,7 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-     <link rel="stylesheet" href="/home/aashish/Proj/form.css" text="text/css">
+     <link rel="stylesheet" href="css/form.css" text="text/css">
 </head>
 </head>
 <body>
@@ -28,11 +37,20 @@
              <span class="icon-bar"></span>
                              
            </button>
-          <a class="navbar-brand" href="/home/aashish/sell/index.html"><span class="glyphicon glyphicon-home icon-color" aria-hidden="true"></span></a>
+           <%
+		   String s1=request.getParameter("username");
+		   if(s1==null)
+		   {%>
+          <a class="navbar-brand" href="index1.jsp"><span class="glyphicon glyphicon-home icon-color" aria-hidden="true"></span></a>
+		   <%}
+		   else
+		   {%>
+			<a class="navbar-brand" href="index1.jsp?username=<%=request.getParameter("username")%>"><span class="glyphicon glyphicon-home icon-color" aria-hidden="true"></span></a>
+		   <%}%>
     </div>
           <div class ="collapse navbar-collapse" id ="navigationbar">
                  <ul class="nav navbar-nav navbar-right">
-                       <li><a href="#logout">LOGOUT</a></li>
+                       <li><a href="logout.jsp">LOGOUT</a></li>
                     
           </div>
        </div>
@@ -41,34 +59,40 @@
 <div class="container">
 
 <h3 style="margin-bottom: 50px">Submit the details</h3>
-<form>
+<form method=POST action=uploadadd.jsp enctype="multipart/form-data">
+<div class="form-group">
+<input type="text" class="form-control" id="user" placeholder="<%=request.getParameter("username")%>" value="<%=request.getParameter("username")%>" name="user" readonly>
+</div>
  <div class="form-group">
      <input type="text" class="form-control" id= "name" placeholder="Name " name="names">
  </div>
 
  <div class="form-group">
-     <input type="email" class="form-control" id= "email" placeholder="Email Address" name="emails">
+     <input type="text" class="form-control" id= "email" placeholder="Email Address" name="emails">
  </div>   
 <div class="form-group">
-     <input type="number" class="form-control" id= "number" placeholder="Contact Number " name="numbers" maxlength="11">
+     <input type="number" class="form-control" id= "number" placeholder="Contact Number " name="contact" maxlength="11">
      </div>
 
 <div class="form-group">
      <label for ="typep">Type </label>
-     <select>
+     <select name="category">
      	<option value="books">Books</option>
      	<option value="accessories">Accessories</option>
      	<option value="others">Others</option>
      </select>
 </div>
-
+<div class="form-group">
+	<label for="image">Image</label>
+	<input type="file" id="image" name="fileupload" accept="image/*" />
+</div>
 <div class="form-group">
  
-     <input type="number" class="form-control" id= "number" placeholder="Article Name" name="numbers">
+     <input type="text" class="form-control" id= "number" placeholder="Article Name" name="article">
      </div>
 
 <div class="form-group">
-     <input type="number" class="form-control" id= "number" placeholder="Price INR" name="numbers" maxlength="5">
+     <input type="number" class="form-control" id= "number" placeholder="Price INR" name="price" maxlength="5">
      </div>
 
 
@@ -96,3 +120,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
+<%
+}
+%>

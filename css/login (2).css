@@ -1,0 +1,117 @@
+@import url("link href="https://fonts.googleapis.com/css?family=Bellefair|Droid+Sans+Mono|Oxygen|Armata" rel="stylesheet"");
+.form
+{
+margin:20px;
+padding:20px;
+}
+
+.jumbotron
+{
+
+text-align: center;
+color:#ffffff;
+background-color:#3F51B5  ;
+padding: 80px 25px;
+font-family: 'Bellefair',serif;
+}
+.navbar
+{
+background-color:#3F51B5  ;
+background: #3F51B5  ;
+border-color: transparent;
+min-height: 50px !important;
+padding: 10px;
+font-style: bold;
+font-size: 16px;
+font-family: 'Droid Sans Mono', monospace;
+
+
+}
+
+
+.nav.navbar-nav.navbar-right li a
+{
+	color:#FFFFFF;
+}
+.navbar-header .navbar-brand > a
+{
+	color:#FFFFFF  !important;
+}
+
+.icon-color
+{
+
+	color:white;
+	font-size:  30px;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #A901DB !important;
+    background-color: #fff !important;
+}
+
+.abc
+{
+
+
+	padding :50px;
+	max-width: 600px;
+	border-style: solid;
+	border-width: 1px;
+    max-height: 1000px;
+
+
+}
+
+.row{
+
+
+
+	padding-top: 60px;
+}
+
+
+
+
+
+h2
+{
+	
+	font-size: 40px;
+	font-family: 'Droid Sans Mono', monospace;
+	
+}
+
+p{
+
+font-family: 'Oxygen', sans-serif;
+font-size: 22px;
+
+
+}
+h3
+{
+
+font-family: 'Droid Sans Mono', monospace;
+font-size: 25px;
+
+}
+
+body
+{
+background-color:#F3F3F3  ;
+
+}
+hr
+{
+	 border: 1px solid rgba(0,0,0,0.3);
+	
+}
+
+footer
+{
+
+    padding-top:10px;
+	background-color:#3F51B5 ;
+	color: white;
+}

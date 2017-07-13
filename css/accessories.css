@@ -1,16 +1,12 @@
-
-@import url("link href="https://fonts.googleapis.com/css?family=Bellefair|Droid+Sans+Mono|Oxygen|Armata" rel="stylesheet"");
-
 .navbar
 {
-background-color:#FF5722  ;
-background: #FF5722  ;
+background-color:#A901DB;
+background: #A901DB;
 border-color: transparent;
 min-height: 50px !important;
 padding: 10px;
 font-style: bold;
 font-size: 16px;
-font-family: 'Droid Sans Mono', monospace;
 
 
 }
@@ -19,9 +15,8 @@ font-family: 'Droid Sans Mono', monospace;
 
 text-align: center;
 color:#ffffff;
-background-color: #FF5722  ;
+background-color: #A901DB;
 padding: 80px 25px;
-font-family: 'Bellefair',serif;
 }
 
 
@@ -43,10 +38,9 @@ font-family: 'Bellefair',serif;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #FF5722   !important;
+    color: #A901DB !important;
     background-color: #fff !important;
 }
-
 
 .align
 {
@@ -84,45 +78,4 @@ padding-bottom: 50px;
 padding-top: 80px;
 padding-bottom: 50px;
 
-}
-
-h2
-{
-	
-	font-size: 40px;
-	font-family: 'Droid Sans Mono', monospace;
-	
-}
-
-p{
-
-font-family: 'Oxygen', sans-serif;
-font-size: 22px;
-
-
-}
-h3
-{
-
-font-family: 'Droid Sans Mono', monospace;
-font-size: 25px;
-
-}
-
-body
-{
-background-color:#F3F3F3  ;
-
-}
-hr
-{
-	 border: 1px solid rgba(0,0,0,0.3);
-	
-}
-
-footer
-{
-    padding-top:5px;
-	background-color: #FF5722;
-	color: white;
 }
